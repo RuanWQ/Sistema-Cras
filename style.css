@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar rolagem horizontal */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.barraTop {
+  height: 50px;
+  background-color: #003366;
+}
+
+/* Media Query para TVs */
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+  body {
+      overflow-y: hidden; /* Ocultar a rolagem vertical na TV */
+  }
+
+  .container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50%; /* Mostrar apenas a metade superior da tela */
+      z-index: 1000;
+      background-color: white; /* Cor de fundo */
+  }
+
+  .footer {
+      display: none; /* Esconder o rodapé na TV */
+  }
+}
+
+/* Estilos normais para visualização no computador */
+.logo {
+  max-height: 90px;
+  margin-right: 60px;
+margin-right: 60%;
+}
+
+.barraSuperior {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #003366;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.uespiTexto {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitulo {
+  font-size: 18px;
+}
+
+.senhaAtual {
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+color: #f4f4f4;
+}
+
+.ultimaSenha{
+background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.senhaAtualTexto {
+  font-size: 24px;
+  font-weight: bold;
+color: #f4f4f4;
+}
+
+#nomeAtual {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ultimaSenhaTexto {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#ultimaChamadaTexto {
+  font-size: 16px;
+  color: #666;
+}
+
+#ultimaChamadaNome {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.list-group {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  padding: 10px;
+  background-color: #e6e6e6;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.table-simples {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table-simples th, .table-simples td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  background-color: #f8f8f8;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #003366;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Estilos para as colunas esquerda e direita */
+.col-left {
+  width: 60%;
+  padding: 10px;
+}
+
+.col-right {
+  width: 35%;
+  padding: 10px;
+margin-top: -1.5%;
+}
+
+#nomeAtual {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.senhaAtual {
+  margin-bottom: 20px;
+}
+
+.ultimaSenha {
+  margin-top: 20px;
+}
+
+/* Estilo para centralizar o input e os botões */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Centraliza o texto do rodapé */
+.footer {
+  background-color: #003366;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: relative; 
+  bottom: 0; 
+  width: 98%;
+  margin-top: 50px; 
+}
+
+#txtFooter{
+margin-left: 20%;
+}
+
+#btnAdicionar{
+background-color: #003366;
+border-radius: 5px;
+border-color: #ccc;
+color: white;
+font-size: 20px;
+border: 1,5px;
+}
+
+#btnRemover{
+background-color: #cf0000;
+border-radius: 5px;
+border-color: #ccc;
+color: white;
+font-size: 20px;
+border: 1,5px;
+}
+
+#btnMover{
+background-color: #18cf00;
+border-radius: 5px;
+border: 1,5px;
+border-color: #ffffff;
+color: white;
+font-size: 20px;
+}
+
+#btnChamarDeNovo{
+background-color: #119100;
+border-radius: 5px;
+border: 1,5px;
+border-color: #ffffff;
+color: white;
+font-size: 20px;
+}
+
+.form-group{
+border-radius: 5px;
+border-color: #ffffff;
+border: 1,5px;
+margin-left: 5%;
+font-size: 30px;
+margin-top: 200px;
+}
+
+#inputNome{
+font-size: 20px;
+}
+
+#ultimaChamadaTexto{
+font-size: 30px;
+}
+

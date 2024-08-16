@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Chamadas do CRAS</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="barraSuperior">
+        <img src="img/ceara.png" class="logo">
+        <div>
+            <span class="uespiTexto">CRAS</span><br>
+            <span class="subtitulo">Centro de Referência de Assistência Social <strong>2024</strong></span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-left">
+            <div class="senhaAtual">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span class="senhaAtualTexto">NOME:</span>
+                        <span id="nomeAtual">Nome do Usuário</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ultimaSenha">
+                <table class="table-simples">
+                    <thead>
+                        <tr>
+                            <th>ÚLTIMAS PESSOAS CHAMADAS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span id="ultimaChamadaTexto">1</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <h3>LISTA DE ESPERA</h3>
+            <table class="table-simples">
+                <thead>
+                    <tr>
+                        <th>NOMES</th>
+                    </tr>
+                </thead>
+                <tbody id="listaProximos">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="formContainer">
+        <form id="formChamada">
+            <div class="form-group">
+                <label for="inputNome">Insira o nome:</label>
+                <input type="text" id="inputNome" class="form-control" placeholder="Nome da Pessoa">
+            </div>
+			<br>
+            <button type="button" id="btnAdicionar" class="btn btn-primary">Adicionar</button>
+            <button type="button" id="btnRemover" class="btn btn-danger">Remover</button>
+            <button type="button" id="btnMover" class="btn btn-success">Chamar</button>
+			<button type="button" id="btnChamarDeNovo" class="btn btn-info">Chamar de Novo</button>
+        </form>
+    </div>
+	
+    <footer class="footer">
+        <div class="container">
+            <p id="txtFooter">&copy; 2024 CRAS - Centro de Referência de Assistência Social. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <audio id="audioChamada" src="audio/chamada.wav"></audio>
+</body>
+</html>
