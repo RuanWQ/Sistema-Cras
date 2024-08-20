@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar rolagem horizontal */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.barraTop {
+    height: 50px;
+    background-color: #003366;
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    body {
+        overflow-y: hidden; /* Ocultar a rolagem vertical na TV */
+    }
+
+    .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50%; /* Mostrar apenas a metade superior da tela */
+        z-index: 1000;
+        background-color: white; /* Cor de fundo */
+    }
+
+    .footer {
+        display: none; /* Esconder o rodapé na TV */
+    }
+}
+
+.logo {
+    max-height: 90px;
+    margin-left: 80%;
+}
+
+.divSubtitulo {
+    margin-left: 61%;
+}
+
+.texto {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 18px;
+}
+
+.barraSuperior {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #003366;
+    display: flex;
+    align-items: center;
+    /* Adiciona espaço entre os itens, mas permite flexibilidade */
+}
+
+.senhaAtual, .ultimaSenha {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.senhaAtualTexto {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#nomeAtual {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.ultimaSenhaTexto {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table-simples {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-simples th, .table-simples td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    background-color: #f8f8f8;
+}
+
+.col-left {
+    width: 60%;
+    padding: 10px;
+}
+
+.col-right {
+    width: 35%;
+    padding: 10px;
+    margin-top: -1.5%;
+}
+
+#nomeAtual {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.ultimaSenha {
+    margin-top: 20px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #003366;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#txtFooter {
+    margin-left: 0;
+}
+
+#btnAdicionar, #btnRemover, #btnMover, #btnChamarDeNovo, #btnCadastre {
+    border-radius: 5px;
+    border-color: #ccc;
+    color: white;
+    font-size: 20px;
+}
+
+#btnAdicionar {
+    background-color: #003366;
+}
+
+#btnRemover {
+    background-color: #cf0000;
+}
+
+#btnMover {
+    background-color: #18cf00;
+}
+
+#btnChamarDeNovo {
+    background-color: #119100;
+}
+
+#btnCadastre {
+    background-color: #003366;
+}
+
+#inputNome {
+    font-size: 20px;
+}
+
+#ultimaChamadaTexto {
+    font-size: 30px;
+}
